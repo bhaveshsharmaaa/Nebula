@@ -30,10 +30,6 @@ export default function RootLayout() {
     }
   }, [fontsLoaded]);
 
-  if (!fontsLoaded) {
-    return null; // don't show UI until fonts are ready
-  }
-
   return (
     <ClerkAndConvexProvider>
       <SafeAreaProvider>
